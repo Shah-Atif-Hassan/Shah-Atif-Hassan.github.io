@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Syed Atif Hassan — Automation & Embedded Systems Engineer</title>
+<title>Syed Atif Hassan — Automation & Embedded Systems Engineer | 5000+ Projects</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -18,6 +18,7 @@
     --muted: #8899aa;
     --border: rgba(255,255,255,0.08);
     --card: rgba(255,255,255,0.04);
+    --whatsapp: #25D366;
   }
 
   html { scroll-behavior: smooth; }
@@ -127,6 +128,7 @@
   .hero-stats {
     display: flex; gap: 3rem; margin-top: 4rem;
     padding-top: 2rem; border-top: 1px solid var(--border);
+    flex-wrap: wrap;
   }
   .stat-num {
     font-family: 'Syne', sans-serif;
@@ -267,8 +269,44 @@
     display: flex; align-items: center; justify-content: center;
     font-size: 1rem; flex-shrink: 0;
   }
-  .contact-detail a { color: var(--text); text-decoration: none; }
+  .contact-detail a { color: var(--text); text-decoration: none; transition: color 0.2s; }
   .contact-detail a:hover { color: var(--accent); }
+  
+  /* WhatsApp specific styling */
+  .whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(37, 211, 102, 0.12);
+    padding: 0.3rem 0.8rem;
+    border-radius: 40px;
+    border: 1px solid rgba(37, 211, 102, 0.3);
+    transition: all 0.2s ease;
+  }
+  .whatsapp-link:hover {
+    background: rgba(37, 211, 102, 0.25);
+    border-color: var(--whatsapp);
+    transform: translateX(4px);
+    color: #4cd964 !important;
+  }
+  .whatsapp-icon {
+    font-size: 1.1rem;
+  }
+  .contact-number-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .wa-badge {
+    font-size: 0.7rem;
+    background: rgba(37,211,102,0.2);
+    color: #4cd964;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    letter-spacing: 0.3px;
+    font-weight: 500;
+  }
 
   /* FORM */
   .contact-form {
@@ -336,8 +374,19 @@
     border-top: 1px solid var(--border);
     display: flex; justify-content: space-between; align-items: center;
     color: var(--muted); font-size: 0.82rem;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
   footer span { color: var(--accent); }
+  .footer-wa {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: rgba(37,211,102,0.1);
+    padding: 0.2rem 0.7rem;
+    border-radius: 30px;
+    font-size: 0.75rem;
+  }
 
   /* YOUTUBE GRID */
   .yt-grid {
@@ -371,7 +420,7 @@
     .hero-stats { gap: 1.5rem; flex-wrap: wrap; }
     .contact-wrap { grid-template-columns: 1fr; gap: 2rem; }
     .form-row { grid-template-columns: 1fr; }
-    footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+    footer { flex-direction: column; text-align: center; justify-content: center; }
   }
 </style>
 </head>
@@ -391,7 +440,7 @@
 <section class="hero">
   <div class="hero-tag">📍 Available for Remote & On-site Work — Karachi, Pakistan</div>
   <h1>Automation &<br><span>Embedded Systems</span><br>Engineer</h1>
-  <p class="hero-sub">25+ years designing PLC systems, microcontroller circuits, IoT devices, and industrial automation solutions for global clients.</p>
+  <p class="hero-sub">25+ years designing PLC systems, microcontroller circuits, IoT devices, and industrial automation solutions — <strong>5000+ projects delivered</strong> with over 3000+ PLC/HMI based industrial systems worldwide.</p>
   <div class="hero-btns">
     <a href="#contact" class="btn-primary">Hire Me Now</a>
     <a href="#projects" class="btn-outline">View My Work</a>
@@ -402,8 +451,12 @@
       <div class="stat-label">Years Experience</div>
     </div>
     <div>
-      <div class="stat-num">50+</div>
-      <div class="stat-label">Projects Delivered</div>
+      <div class="stat-num">5,000+</div>
+      <div class="stat-label">Total Projects Delivered</div>
+    </div>
+    <div>
+      <div class="stat-num">3,000+</div>
+      <div class="stat-label">PLC/HMI Based Projects</div>
     </div>
     <div>
       <div class="stat-num">10+</div>
@@ -420,13 +473,13 @@
 <section id="skills">
   <div class="section-label">Expertise</div>
   <h2 class="section-title">What I Can Build For You</h2>
-  <p class="section-desc">From factory floor automation to IoT-connected gadgets — I handle the full engineering lifecycle.</p>
+  <p class="section-desc">From factory floor automation to IoT-connected gadgets — I handle the full engineering lifecycle. Over 3,000 successful PLC/HMI implementations across industries.</p>
 
   <div class="skills-grid">
     <div class="skill-card">
       <div class="skill-icon">⚙️</div>
       <h3>PLC / HMI Programming</h3>
-      <p>Industrial automation with Siemens, Allen Bradley, Omron, Mitsubishi and more.</p>
+      <p>Industrial automation with Siemens, Allen Bradley, Omron, Mitsubishi and more. <strong>3000+ projects delivered</strong>.</p>
       <div class="skill-tags">
         <span class="tag">Siemens S7-200/300/400/1500</span>
         <span class="tag">Allen Bradley</span>
@@ -491,8 +544,8 @@
 <!-- PROJECTS -->
 <section id="projects">
   <div class="section-label">Portfolio</div>
-  <h2 class="section-title">Real Projects Delivered</h2>
-  <p class="section-desc">Major clients across Pakistan and internationally — here's a sample of my work.</p>
+  <h2 class="section-title">Real Projects Delivered — 5000+ Strong</h2>
+  <p class="section-desc">Major clients across Pakistan and internationally — a sample of my work from thousands of successful industrial implementations.</p>
 
   <div class="projects-grid">
     <div class="project-card">
@@ -571,7 +624,7 @@
 <section id="experience">
   <div class="section-label">Career</div>
   <h2 class="section-title">25+ Years of Engineering</h2>
-  <p class="section-desc">From junior technician to project manager — a career built on solving real industrial problems.</p>
+  <p class="section-desc">From junior technician to project manager — a career built on solving real industrial problems, delivering over 5000 automation projects worldwide.</p>
 
   <div class="timeline">
     <div class="timeline-item">
@@ -579,7 +632,7 @@
       <div class="timeline-date">Oct 2017 — Present</div>
       <div class="timeline-role">Project Manager</div>
       <div class="timeline-company">SAHEE</div>
-      <div class="timeline-desc">PLC installation, commissioning & programming. AVR/PIC microcontroller system design. Packing systems, fillers, vision inspection, CAN BUS aircraft control systems.</div>
+      <div class="timeline-desc">PLC installation, commissioning & programming. AVR/PIC microcontroller system design. Packing systems, fillers, vision inspection, CAN BUS aircraft control systems. <strong>Led 800+ projects</strong> during this period.</div>
     </div>
     <div class="timeline-item">
       <div class="timeline-dot"></div>
@@ -619,17 +672,23 @@
   </div>
 </section>
 
-<!-- CONTACT -->
+<!-- CONTACT WITH WHATSAPP & EMAIL FORM INTEGRATION -->
 <section id="contact">
   <div class="section-label">Get In Touch</div>
   <div class="contact-wrap">
     <div class="contact-info">
       <h2>Let's Work Together</h2>
-      <p>Have an automation, PLC, embedded system, or IoT project? I'm available for freelance, consulting, and full-time remote work worldwide. Fill the form and I'll reply within 24 hours.</p>
+      <p>Have an automation, PLC, embedded system, or IoT project? I'm available for freelance, consulting, and full-time remote work worldwide. With <strong>5,000+ total projects (3,000+ PLC/HMI based)</strong>, your vision is in expert hands. Fill the form below or reach out on WhatsApp — I'll reply within 24 hours.</p>
 
       <div class="contact-detail">
         <div class="contact-detail-icon">📞</div>
-        <div><a href="tel:+923102315109">+92 310 231 5109</a></div>
+        <div class="contact-number-group">
+          <a href="tel:+923102315109">+92 310 231 5109</a>
+          <a href="https://wa.me/923102315109?text=Hello%20Syed%20Atif%2C%20I%20have%20an%20automation%20project%20to%20discuss." target="_blank" class="whatsapp-link">
+            <span class="whatsapp-icon">💬</span> WhatsApp
+          </a>
+          <span class="wa-badge">✅ Available on WhatsApp</span>
+        </div>
       </div>
       <div class="contact-detail">
         <div class="contact-detail-icon">✉️</div>
@@ -642,7 +701,10 @@
 
       <div style="margin-top: 2rem; padding: 1.25rem; background: rgba(0,212,170,0.08); border: 1px solid rgba(0,212,170,0.2); border-radius: 10px;">
         <div style="font-size: 0.82rem; color: var(--accent); font-weight: 500; margin-bottom: 0.4rem;">✅ Available On</div>
-        <div style="font-size: 0.88rem; color: var(--muted);">Upwork · Fiverr · Freelancer.com · Direct Contract</div>
+        <div style="font-size: 0.88rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 1rem; align-items: center;">
+          <span>Upwork · Fiverr · Freelancer.com · Direct Contract</span>
+          <span style="background: rgba(37,211,102,0.2); padding: 0.2rem 0.6rem; border-radius: 20px;">📱 WhatsApp Preferred</span>
+        </div>
       </div>
     </div>
 
@@ -689,19 +751,25 @@
           <textarea id="f-msg" placeholder="Describe your project, requirements, and timeline..."></textarea>
         </div>
         <button class="submit-btn" onclick="submitForm()">Send Project Inquiry →</button>
+        <div style="text-align: center; margin-top: 1rem; font-size: 0.7rem; color: var(--muted);">
+          Or simply message me directly on <a href="https://wa.me/923102315109?text=Hello%20Syed%20Atif%2C%20I'm%20interested%20in%20your%20automation%20services." target="_blank" style="color: #25D366; text-decoration: none;">WhatsApp ↗</a>
+        </div>
       </div>
 
       <div class="form-success" id="form-success">
         <div class="check">✅</div>
         <h3>Inquiry Sent!</h3>
-        <p>Thank you! Syed Atif will review your project and reply to your email within 24 hours.</p>
+        <p>Thank you! Syed Atif will review your project and reply to your email (<span id="sent-email"></span>) within 24 hours. You can also WhatsApp at +92 310 231 5109 for faster response.</p>
       </div>
     </div>
   </div>
 </section>
 
 <footer>
-  <div>© 2025 <span>Syed Atif Hassan</span> — Electronics & Automation Engineer</div>
+  <div>© 2025 <span>Syed Atif Hassan</span> — 5,000+ Automation Projects Delivered | 3,000+ PLC/HMI Systems</div>
+  <div class="footer-wa">
+    <span>💬</span> WhatsApp: +92 310 231 5109
+  </div>
   <div>Karachi, Pakistan · Available Worldwide</div>
 </footer>
 
@@ -711,25 +779,51 @@ function submitForm() {
   const email = document.getElementById('f-email').value.trim();
   const msg = document.getElementById('f-msg').value.trim();
   const type = document.getElementById('f-type').value;
+  const budget = document.getElementById('f-budget').value;
 
+  // Validation
   if (!name || !email || !msg || !type) {
     alert('Please fill in all required fields (Name, Email, Project Type, and Description).');
     return;
   }
 
-  const subject = encodeURIComponent('Project Inquiry: ' + type);
-  const body = encodeURIComponent(
-    'Name: ' + name + '\n' +
-    'Email: ' + email + '\n' +
-    'Project Type: ' + type + '\n' +
-    'Budget: ' + (document.getElementById('f-budget').value || 'Not specified') + '\n\n' +
-    'Description:\n' + msg
-  );
+  // Email validation
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(email)) {
+    alert('Please enter a valid email address (e.g., name@domain.com).');
+    return;
+  }
 
-  window.location.href = 'mailto:atifsyedatif@yahoo.com?subject=' + subject + '&body=' + body;
+  // Prepare email content
+  const subject = `[Project Inquiry] ${type} from ${name}`;
+  const body = 
+    `--- New Project Inquiry from Portfolio ---\n\n` +
+    `Name: ${name}\n` +
+    `Email: ${email}\n` +
+    `Project Type: ${type}\n` +
+    `Budget: ${budget || 'Not specified'}\n\n` +
+    `Project Description:\n${msg}\n\n` +
+    `---\nSent via contact form on sah-engineering portfolio.`;
 
+  // Encode for mailto
+  const mailtoLink = `mailto:atifsyedatif@yahoo.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  
+  // Store the email to show in success message
+  document.getElementById('sent-email').innerText = email;
+  
+  // Open default email client
+  window.location.href = mailtoLink;
+  
+  // Show success message and hide form
   document.getElementById('form-fields').style.display = 'none';
   document.getElementById('form-success').style.display = 'block';
+  
+  // Optional: Clear form fields after success (even though hidden)
+  document.getElementById('f-name').value = '';
+  document.getElementById('f-email').value = '';
+  document.getElementById('f-type').value = '';
+  document.getElementById('f-budget').value = '';
+  document.getElementById('f-msg').value = '';
 }
 </script>
 </body>
