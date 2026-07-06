@@ -244,6 +244,29 @@
   .timeline-company { font-size: 0.9rem; color: var(--muted); margin-bottom: 0.5rem; }
   .timeline-desc { font-size: 0.85rem; color: var(--muted); }
 
+  /* EDUCATION */
+  #education { background: var(--bg); }
+  .edu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  .edu-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: border-color 0.2s;
+  }
+  .edu-card:hover { border-color: rgba(0,212,170,0.3); }
+  .edu-date { font-size: 0.75rem; color: var(--accent); font-weight: 500; }
+  .edu-card h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.05rem; font-weight: 600;
+    margin: 0.3rem 0 0.2rem;
+  }
+  .edu-card p { font-size: 0.85rem; color: var(--muted); }
+
   /* CONTACT */
   #contact { background: var(--bg); }
   .contact-wrap {
@@ -272,7 +295,6 @@
   .contact-detail a { color: var(--text); text-decoration: none; transition: color 0.2s; }
   .contact-detail a:hover { color: var(--accent); }
   
-  /* WhatsApp specific styling */
   .whatsapp-link {
     display: inline-flex;
     align-items: center;
@@ -288,9 +310,6 @@
     border-color: var(--whatsapp);
     transform: translateX(4px);
     color: #4cd964 !important;
-  }
-  .whatsapp-icon {
-    font-size: 1.1rem;
   }
   .contact-number-group {
     display: flex;
@@ -308,7 +327,6 @@
     font-weight: 500;
   }
 
-  /* FORM */
   .contact-form {
     background: var(--card);
     border: 1px solid var(--border);
@@ -432,6 +450,7 @@
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
     <li><a href="#contact" class="nav-cta">Hire Me</a></li>
   </ul>
 </nav>
@@ -440,7 +459,7 @@
 <section class="hero">
   <div class="hero-tag">📍 Available for Remote & On-site Work — Karachi, Pakistan</div>
   <h1>Automation &<br><span>Embedded Systems</span><br>Engineer</h1>
-  <p class="hero-sub">25+ years designing PLC systems, microcontroller circuits, IoT devices, and industrial automation solutions — <strong>5000+ projects delivered</strong> with over 3000+ PLC/HMI based industrial systems worldwide.</p>
+  <p class="hero-sub">25+ years designing PLC systems, microcontroller circuits, IoT devices, and industrial automation solutions — <strong>5000+ projects delivered</strong> with over 3000+ PLC/HMI based industrial systems worldwide. <strong>MSc Project Management</strong>, University of Sunderland.</p>
   <div class="hero-btns">
     <a href="#contact" class="btn-primary">Hire Me Now</a>
     <a href="#projects" class="btn-outline">View My Work</a>
@@ -459,12 +478,8 @@
       <div class="stat-label">PLC/HMI Based Projects</div>
     </div>
     <div>
-      <div class="stat-num">10+</div>
-      <div class="stat-label">PLC Brands Mastered</div>
-    </div>
-    <div>
       <div class="stat-num">MSc</div>
-      <div class="stat-label">Project Management, Sunderland</div>
+      <div class="stat-label">Project Management, UK</div>
     </div>
   </div>
 </section>
@@ -500,13 +515,31 @@
       </div>
     </div>
     <div class="skill-card">
-      <div class="skill-icon">🌐</div>
-      <h3>IoT Systems</h3>
-      <p>Connected devices using MQTT, HTTP, WebSockets, Zigbee, GSM and Modbus protocols.</p>
+      <div class="skill-icon">📡</div>
+      <h3>Wireless & IoT (nRF51/52, GSM, BLE, Wi-Fi)</h3>
+      <p>End-to-end firmware for connected devices using Nordic nRF51/nRF52, GSM/GPRS (SIM800/Quectel), BLE, Wi-Fi (ESP8266/ESP32), Zigbee, and MQTT/HTTP protocols.</p>
       <div class="skill-tags">
-        <span class="tag">MQTT</span><span class="tag">HTTP/S</span>
-        <span class="tag">Modbus</span><span class="tag">I2C</span>
-        <span class="tag">SPI</span><span class="tag">UART</span>
+        <span class="tag">nRF51</span>
+        <span class="tag">nRF52</span>
+        <span class="tag">GSM/GPRS</span>
+        <span class="tag">BLE</span>
+        <span class="tag">Wi-Fi</span>
+        <span class="tag">ESP32</span>
+        <span class="tag">MQTT</span>
+        <span class="tag">OTA</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🌐</div>
+      <h3>Web Development</h3>
+      <p>Full-stack web development including HTML5, CSS3, JavaScript, PHP, WordPress, and responsive design for business and portfolio websites.</p>
+      <div class="skill-tags">
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">PHP</span>
+        <span class="tag">WordPress</span>
+        <span class="tag">Bootstrap</span>
       </div>
     </div>
     <div class="skill-card">
@@ -538,6 +571,17 @@
         <span class="tag">Barcode Integration</span><span class="tag">Rejection Systems</span>
       </div>
     </div>
+    <div class="skill-card">
+      <div class="skill-icon">💻</div>
+      <h3>Programming Languages</h3>
+      <p>C, C++, Python, Assembly, VB.NET, C#, Java, SQL, and embedded C for microcontrollers.</p>
+      <div class="skill-tags">
+        <span class="tag">C</span><span class="tag">C++</span>
+        <span class="tag">Python</span><span class="tag">Assembly</span>
+        <span class="tag">VB.NET</span><span class="tag">C#</span>
+        <span class="tag">SQL</span>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -548,6 +592,36 @@
   <p class="section-desc">Major clients across Pakistan and internationally — a sample of my work from thousands of successful industrial implementations.</p>
 
   <div class="projects-grid">
+    <!-- NEW: GSM TRACKER PROJECT -->
+    <div class="project-card" style="border-color: rgba(0,212,170,0.4);">
+      <div class="project-client">SAHEE — Commercial Product</div>
+      <h3>GSM Vehicle Tracker (nRF51 + GSM/GPRS + BLE)</h3>
+      <p>End-to-end firmware development using <strong>Nordic nRF51</strong> with <strong>GSM/GPRS</strong> (SIM800) and <strong>BLE</strong> for local configuration. Implemented OTA firmware updates via GPRS with checksum verification and automatic rollback. Built Python factory test automation — reduced test time from 20 to 5 minutes per unit. Over 100+ units shipped across Pakistan.</p>
+      <div class="skill-tags">
+        <span class="tag">nRF51</span>
+        <span class="tag">GSM/GPRS</span>
+        <span class="tag">BLE</span>
+        <span class="tag">OTA</span>
+        <span class="tag">Python</span>
+        <span class="tag">SMS Commands</span>
+      </div>
+    </div>
+
+    <!-- NEW: WEBSITE DEVELOPMENT PROJECT -->
+    <div class="project-card">
+      <div class="project-client">Various Clients</div>
+      <h3>Website Development & Web Applications</h3>
+      <p>Designed and developed custom websites using <strong>HTML, CSS, JavaScript, PHP, and WordPress</strong>. Built portfolio sites, business landing pages, and e-commerce solutions with responsive design and SEO optimization.</p>
+      <div class="skill-tags">
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">PHP</span>
+        <span class="tag">WordPress</span>
+        <span class="tag">Responsive</span>
+      </div>
+    </div>
+
     <div class="project-card">
       <div class="project-client">Chevron Pakistan</div>
       <h3>Pick & Place Fanuc Robot</h3>
@@ -616,6 +690,10 @@
         <div class="yt-thumb">▶️</div>
         <div class="yt-info"><p>Industrial Demo</p></div>
       </a>
+      <a class="yt-card" href="https://www.youtube.com/watch?v=EdDRkNyrBkw" target="_blank">
+        <div class="yt-thumb">▶️</div>
+        <div class="yt-info"><p>Website Development Demo</p></div>
+      </a>
     </div>
   </div>
 </section>
@@ -632,7 +710,7 @@
       <div class="timeline-date">Oct 2017 — Present</div>
       <div class="timeline-role">Project Manager</div>
       <div class="timeline-company">SAHEE</div>
-      <div class="timeline-desc">PLC installation, commissioning & programming. AVR/PIC microcontroller system design. Packing systems, fillers, vision inspection, CAN BUS aircraft control systems. <strong>Led 800+ projects</strong> during this period.</div>
+      <div class="timeline-desc">PLC installation, commissioning & programming. AVR/PIC microcontroller system design. Packing systems, fillers, vision inspection, CAN BUS aircraft control systems. <strong>nRF51 + GSM/GPRS + BLE</strong> firmware development for commercial vehicle tracker. <strong>Led 800+ projects</strong> during this period.</div>
     </div>
     <div class="timeline-item">
       <div class="timeline-dot"></div>
@@ -672,13 +750,53 @@
   </div>
 </section>
 
-<!-- CONTACT WITH WHATSAPP & EMAIL FORM INTEGRATION -->
+<!-- EDUCATION -->
+<section id="education">
+  <div class="section-label">Education</div>
+  <h2 class="section-title">Academic Qualifications</h2>
+  <p class="section-desc">Formal education that complements 25+ years of hands-on engineering experience.</p>
+
+  <div class="edu-grid">
+    <div class="edu-card">
+      <div class="edu-date">2010 — 2011</div>
+      <h3>MSc Project Management</h3>
+      <p>University of Sunderland, UK</p>
+    </div>
+    <div class="edu-card">
+      <div class="edu-date">1994 — 1997</div>
+      <h3>B.Tech (Electronics)</h3>
+      <p>PIMSAT, Pakistan</p>
+    </div>
+    <div class="edu-card">
+      <div class="edu-date">1997 — 1998</div>
+      <h3>D.A.E (R.T.V) Electronics</h3>
+      <p>Aligarh Institute of Technology</p>
+    </div>
+    <div class="edu-card">
+      <div class="edu-date">1992 — 1994</div>
+      <h3>H.S.C (Pre-Engineering)</h3>
+      <p>Govt. Edu. Foundation Science College</p>
+    </div>
+    <div class="edu-card">
+      <div class="edu-date">1990 — 1992</div>
+      <h3>S.S.C Science</h3>
+      <p>National High School</p>
+    </div>
+    <div class="edu-card">
+      <div class="edu-date">1993</div>
+      <h3>Computer Hardware & Software</h3>
+      <p>Advanced Technology Inc. — Six Month Course</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
 <section id="contact">
   <div class="section-label">Get In Touch</div>
   <div class="contact-wrap">
     <div class="contact-info">
       <h2>Let's Work Together</h2>
-      <p>Have an automation, PLC, embedded system, or IoT project? I'm available for freelance, consulting, and full-time remote work worldwide. With <strong>5,000+ total projects (3,000+ PLC/HMI based)</strong>, your vision is in expert hands. Fill the form below or reach out on WhatsApp — I'll reply within 24 hours.</p>
+      <p>Have an automation, PLC, embedded system, IoT, or web development project? I'm available for freelance, consulting, and full-time remote work worldwide. With <strong>5,000+ total projects (3,000+ PLC/HMI based)</strong>, your vision is in expert hands. Fill the form below or reach out on WhatsApp — I'll reply within 24 hours.</p>
 
       <div class="contact-detail">
         <div class="contact-detail-icon">📞</div>
@@ -731,6 +849,7 @@
             <option>Industrial Automation Consulting</option>
             <option>FPGA Development</option>
             <option>Robot Programming</option>
+            <option>Web Development</option>
             <option>Other</option>
           </select>
         </div>
@@ -766,7 +885,7 @@
 </section>
 
 <footer>
-  <div>© 2025 <span>Syed Atif Hassan</span> — 5,000+ Automation Projects Delivered | 3,000+ PLC/HMI Systems</div>
+  <div>© 2025 <span>Syed Atif Hassan</span> — 5,000+ Automation Projects Delivered | 3,000+ PLC/HMI Systems | MSc Project Management</div>
   <div class="footer-wa">
     <span>💬</span> WhatsApp: +92 310 231 5109
   </div>
@@ -781,20 +900,17 @@ function submitForm() {
   const type = document.getElementById('f-type').value;
   const budget = document.getElementById('f-budget').value;
 
-  // Validation
   if (!name || !email || !msg || !type) {
     alert('Please fill in all required fields (Name, Email, Project Type, and Description).');
     return;
   }
 
-  // Email validation
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailPattern.test(email)) {
     alert('Please enter a valid email address (e.g., name@domain.com).');
     return;
   }
 
-  // Prepare email content
   const subject = `[Project Inquiry] ${type} from ${name}`;
   const body = 
     `--- New Project Inquiry from Portfolio ---\n\n` +
@@ -803,27 +919,14 @@ function submitForm() {
     `Project Type: ${type}\n` +
     `Budget: ${budget || 'Not specified'}\n\n` +
     `Project Description:\n${msg}\n\n` +
-    `---\nSent via contact form on sah-engineering portfolio.`;
+    `---\nSent via contact form on SAH Engineering portfolio.`;
 
-  // Encode for mailto
   const mailtoLink = `mailto:atifsyedatif@yahoo.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   
-  // Store the email to show in success message
   document.getElementById('sent-email').innerText = email;
-  
-  // Open default email client
   window.location.href = mailtoLink;
-  
-  // Show success message and hide form
   document.getElementById('form-fields').style.display = 'none';
   document.getElementById('form-success').style.display = 'block';
-  
-  // Optional: Clear form fields after success (even though hidden)
-  document.getElementById('f-name').value = '';
-  document.getElementById('f-email').value = '';
-  document.getElementById('f-type').value = '';
-  document.getElementById('f-budget').value = '';
-  document.getElementById('f-msg').value = '';
 }
 </script>
 </body>
