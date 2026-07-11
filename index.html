@@ -267,6 +267,29 @@
   }
   .edu-card p { font-size: 0.85rem; color: var(--muted); }
 
+  /* CERTIFICATIONS */
+  #certifications { background: var(--bg2); }
+  .cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  .cert-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: border-color 0.2s;
+  }
+  .cert-card:hover { border-color: rgba(0,212,170,0.3); }
+  .cert-date { font-size: 0.75rem; color: var(--accent); font-weight: 500; }
+  .cert-card h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 1rem; font-weight: 600;
+    margin: 0.3rem 0 0.2rem;
+  }
+  .cert-card p { font-size: 0.85rem; color: var(--muted); }
+
   /* CONTACT */
   #contact { background: var(--bg); }
   .contact-wrap {
@@ -451,6 +474,7 @@
     <li><a href="#projects">Projects</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#education">Education</a></li>
+    <li><a href="#certifications">Certifications</a></li>
     <li><a href="#contact" class="nav-cta">Hire Me</a></li>
   </ul>
 </nav>
@@ -459,7 +483,7 @@
 <section class="hero">
   <div class="hero-tag">📍 Available for Remote & On-site Work — Karachi, Pakistan</div>
   <h1>Automation &<br><span>Embedded Systems</span><br>Engineer</h1>
-  <p class="hero-sub">25+ years designing PLC systems, microcontroller circuits, IoT devices, and industrial automation solutions — <strong>5000+ projects delivered</strong> with over 3000+ PLC/HMI based industrial systems worldwide. <strong>MSc Project Management</strong>, University of Sunderland.</p>
+  <p class="hero-sub">25+ years designing PLC systems, microcontroller circuits, IoT devices, and industrial automation solutions — <strong>5000+ projects delivered</strong> with over 3000+ PLC/HMI based industrial systems worldwide. <strong>MSc Project Management</strong>, University of Sunderland (Feb 2010 — Sep 2011).</p>
   <div class="hero-btns">
     <a href="#contact" class="btn-primary">Hire Me Now</a>
     <a href="#projects" class="btn-outline">View My Work</a>
@@ -592,7 +616,6 @@
   <p class="section-desc">Major clients across Pakistan and internationally — a sample of my work from thousands of successful industrial implementations.</p>
 
   <div class="projects-grid">
-    <!-- NEW: GSM TRACKER PROJECT -->
     <div class="project-card" style="border-color: rgba(0,212,170,0.4);">
       <div class="project-client">SAHEE — Commercial Product</div>
       <h3>GSM Vehicle Tracker (nRF51 + GSM/GPRS + BLE)</h3>
@@ -607,7 +630,6 @@
       </div>
     </div>
 
-    <!-- NEW: WEBSITE DEVELOPMENT PROJECT -->
     <div class="project-card">
       <div class="project-client">Various Clients</div>
       <h3>Website Development & Web Applications</h3>
@@ -750,7 +772,7 @@
   </div>
 </section>
 
-<!-- EDUCATION -->
+<!-- EDUCATION — CORRECTED -->
 <section id="education">
   <div class="section-label">Education</div>
   <h2 class="section-title">Academic Qualifications</h2>
@@ -758,19 +780,24 @@
 
   <div class="edu-grid">
     <div class="edu-card">
-      <div class="edu-date">2010 — 2011</div>
+      <div class="edu-date">Feb 2010 — Sep 2011</div>
       <h3>MSc Project Management</h3>
       <p>University of Sunderland, UK</p>
     </div>
     <div class="edu-card">
-      <div class="edu-date">1994 — 1997</div>
+      <div class="edu-date">2005 — 2007</div>
       <h3>B.Tech (Electronics)</h3>
       <p>PIMSAT, Pakistan</p>
     </div>
     <div class="edu-card">
-      <div class="edu-date">1997 — 1998</div>
+      <div class="edu-date">1994 — 1997</div>
       <h3>D.A.E (R.T.V) Electronics</h3>
       <p>Aligarh Institute of Technology</p>
+    </div>
+    <div class="edu-card">
+      <div class="edu-date">1997 — 1998</div>
+      <h3>DCS (Diploma in Computer Science)</h3>
+      <p>Petromen Institute of Computer Science</p>
     </div>
     <div class="edu-card">
       <div class="edu-date">1992 — 1994</div>
@@ -782,10 +809,45 @@
       <h3>S.S.C Science</h3>
       <p>National High School</p>
     </div>
-    <div class="edu-card">
-      <div class="edu-date">1993</div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="section-label">Certifications</div>
+  <h2 class="section-title">Professional Certifications</h2>
+  <p class="section-desc">Industry-recognized certifications and specialized training that enhance my engineering expertise.</p>
+
+  <div class="cert-grid">
+    <div class="cert-card">
+      <div class="cert-date">1993</div>
       <h3>Computer Hardware & Software</h3>
       <p>Advanced Technology Inc. — Six Month Course</p>
+    </div>
+    <div class="cert-card">
+      <div class="cert-date">2001</div>
+      <h3>PLC (Programmable Logic Control)</h3>
+      <p>Applied Computer Technology</p>
+    </div>
+    <div class="cert-card">
+      <div class="cert-date">2005</div>
+      <h3>Denford Lathe & Triac Milling Machine</h3>
+      <p>Pakistan Navy Engineering College (PNEC)</p>
+    </div>
+    <div class="cert-card">
+      <div class="cert-date">2005</div>
+      <h3>CIM System (Computerized Integrated Manufacturing)</h3>
+      <p>PNEC — Including Robots: ASRS, ER-4, AGP Micro CIM</p>
+    </div>
+    <div class="cert-card">
+      <div class="cert-date">2006</div>
+      <h3>Denford Milling & Lathe</h3>
+      <p>PNEC</p>
+    </div>
+    <div class="cert-card">
+      <div class="cert-date">2006</div>
+      <h3>CAM Courses</h3>
+      <p>PNEC</p>
     </div>
   </div>
 </section>
